@@ -11,7 +11,7 @@
 </script>
 
 <template>
-  {{ weatherStore.temperatura }}
+  <h1>La temperatura actual es: {{ weatherStore.temperatura }}°</h1>
 </template>
 
 <style scoped>

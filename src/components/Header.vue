@@ -1,12 +1,24 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 import Weather from './Weather.vue';
+import { defineProps, ref, watch } from 'vue';
+
+
+const props = defineProps(["mensaje"]);
+const mensaje2 = ref(props.mensaje);
+
+watch(() => props.mensaje,(newValue)=>{
+  mensaje2.value = newValue;
+})
+
 </script>
 
 <template>
   <div class="header">
-    <h1>La temperatura actual es: <Weather></Weather> </h1>
+    {{ mensaje2 }} <Weather></Weather>
+
   </div>
+
 </template>
 
 <style scoped>
