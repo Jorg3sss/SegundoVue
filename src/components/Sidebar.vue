@@ -16,6 +16,7 @@
       <li><router-link to="/Contador">Contador</router-link></li>
       <li><router-link to="/Lista">Lista</router-link></li>
       <li><router-link to="/Registrar">Login</router-link></li>
+      <li><router-link to="/Calcular">Calcular</router-link></li>
 
     </ul>
 
